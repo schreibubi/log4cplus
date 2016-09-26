@@ -177,7 +177,9 @@ namespace log4cplus {
 
         protected:
             virtual void deleteObject(void *object) const {
-                delete static_cast<T*>(object);
+				if (object)
+                    delete static_cast<T*>(object);
+				object=NULL;
             }
         };
 
