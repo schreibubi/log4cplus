@@ -517,7 +517,7 @@ thread_callback_terminator(LPVOID hinstDLL, DWORD fdwReason, LPVOID lpReserved)
 } // namespace log4cplus
 
 
-#if defined (_WIN32) && defined (LOG4CPLUS_BUILD_DLL) && defined (_DLL)
+#if defined (_WIN32) && defined (_DLL)
 extern "C"
 BOOL
 WINAPI
